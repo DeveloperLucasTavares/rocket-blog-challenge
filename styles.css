@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 38rem;
+    width: 100vw;
+    background-color: var(--purple-bg);
+    color: var(--light-purple);
+    border-bottom: 5px solid var(--green)
+}
+
+header .navbar {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+header .navbar > h2 {
+    flex: 1;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    color: var(--light-purple);
+}
+
+header .navbar > h2::after {
+    content: ".";
+    color: var(--green);
+}
+
+header .navbar nav{
+    flex: 1;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+}
+
+header .navbar nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header .navbar nav li:first-child {
+    border-left: 3px solid var(--green);
+}
+header .navbar nav ul li a{
+    color: var(--light-purple);
+    text-decoration: none;
+}
+
+header .navbar .search-nav {
+    flex: 1;
+    font-family: "Roboto";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar .search-nav input{
+    width: 70%;
+    height: 2.8rem;
+    padding: 0.5rem;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    border-style: none;
+}
+
+header .navbar .search-nav input:focus{
+    outline: none;
+}
+
+header .navbar .search-nav button {
+    width: 20%;
+    height: 2.8rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+    border: none;
+    background-color: var(--button-bg);
+}
+
+header .navbar .search-nav button:hover {
+    cursor: pointer;
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+}
+
+header .content .text-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header .content .text-principal article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+header .content .text-principal article h1, p {
+    width: 70%;
+    font-family: "Roboto";
+}
+
+header .content .text-principal article h1 {
+    font: 700 2.5rem/3rem roboto;
+}
+
+header .content .text-principal article p {
+    font-weight: thin;
+}
+
+header .content .text-principal article div {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+header .content .text-principal article div a { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    font: 400 1rem/1rem Roboto;
+    text-decoration: none;
+    color: var(--button-bg);
+}
+
+header .content .text-principal figure {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+}
+
+main .first-post {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    padding-left: 2rem;
+}
+
+main .first-post article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main .first-post article h2 {
+    width: 70%;
+    color: var(--purple-bg);
+}
+
+main .others-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+main .others-text article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+main .others-text article h2 {
+    width: 70%;
+    color: var(--purple-bg);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+    font-family: "Roboto";
+}
+
+footer section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer section article h2 {
+    width: 70%;
+    color: var(--purple-bg);
+}
